@@ -4,6 +4,11 @@ This is for the course BIO:4386 Intro to Scientific Computing in the Spring of 2
 ## Introduction
  Alzheimer's disease is one of the most common forms of dementia. It is onset by multiple factors but most commonly seen in loss of neuronal connectivity due to axonal degeneration. While there are many factors of neurodegeneration, our lab studies the mechanism for loss of axonal connectivity termed Wallerian degeneration. Wallerian degeneration refers to physical damage inflicted on an axon that induces degeneration. This physical damage causes degeneration towards the distal axon terminal unlike retrograde degeneration, where the degeneration is towards the proximal cell body. Despite physical damage in axons being uncommon, Wallerian degeneration is still very similar to how axons react when undergoing a traumatic injury in the central nervous system and an efficient model for our lab. 
  	
+![Healthy axons](https://github.com/Intro-Sci-Comp-UIowa/biol-4386-course-project-maddemir/blob/main/healthy%20axons.jpg.jpg)
+Image of healthy axons collected on ImageJ, notice the strong thicker axons 
+
+![Unhealthy axons](https://github.com/Intro-Sci-Comp-UIowa/biol-4386-course-project-maddemir/blob/main/sick%20axons.jpg.jpg)
+Image of unhealthy azons collected on Imagej, notice the thinning axons breaking down into pieces and thinner colors
 
 Anterograde degeneration is seen in different peripheral neuropathies and diseases and is the cause for diseases such as Alzheimers and/or ALS. For this experiment, our goal is to look at how anterograde degeneration induced by Wallerian degeneration is affected by either having, or not having  supplemental Nerve Growth Factor (NGF) added. NGF is a protein that promotes cell growth, so it is normally added to cells while being cultured to help them survive. To induce the Wallerian Degeneration, the axons are cut just slightly above the soma. This cut is the traumatic injury that the cells will undergo. For this study, we are looking to see if NGF has an influence on neuron cell death or survival during Wallerian Degeneration. Since NGF is a neuron survival factor that we normally add while culturing the cells to promote cell growth, our hypothesis is to see an increase of  regrowth in axons that have started to degenerate from the physical damage.
 
