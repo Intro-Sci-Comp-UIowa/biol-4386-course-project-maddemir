@@ -1,4 +1,4 @@
-**Analyze Nerve Growth Factor (NGF) deprivation in axonal degeneration**
+ **Analyze Nerve Growth Factor (NGF) deprivation in axonal degeneration**
 
 This is for the course BIO:4386 Intro to Scientific Computing in the Spring of 2023. This aims at recreating the graph from the unpublished data behind the NGF Deprivation Experiment (Dr. Daniel Summers Lab). 
 
@@ -166,7 +166,6 @@ df1_mean &lt;- df1 %>%
   group_by(well, hour) %>%
 
   summarize(mean_index = mean(`index`))
-
 print(df1_mean, n = 198)
 
 **# Last up is to create a scatter plot with all these means, so that it is averaging all the wells and plotting the degeneration index by hours 1-13 on the x-axis.**
@@ -175,7 +174,8 @@ ggplot(df1_mean, aes(x = hour, y = mean_index)) +
 
   geom_point(stat = "summary", fun.y = "mean", size = 3, shape = 16) +
 
-  labs(x = "Time (hour)", y = "Degeneration Index", title = "Mean Degeneration Index by Hour") 
+  labs(x = "Time (hour)", y = "Degeneration Index", title = "Mean Degeneration >
+
 
 **Results section:**
 
@@ -187,19 +187,11 @@ ggplot(df1_mean, aes(x = hour, y = mean_index)) +
 
  Fig. 2 This figure shows the amount of Axon Degeneration scored on the degeneration index between 0.0-1.0 with scores above 0.3 to be considered undergoing induced/severe degeneration rather than normal cell decay. This figures averages the means for all the wells in the data set and plots them  long the X- axis is the hour post axotomy of the cells. This figure has only one condition present, the condition where cells were deprived of NGF  for four hours and later had NGF added back to the cells.
 
-
  While some degeneration is expected because cells will naturally die, degeneration past .3 on the degeneration index implies that the amount of degeneration is more than the typical expected degeneration. The figure shows that the degeneration amount increases most between hours 5-10 and evens out after 10 hours at .5 degeneration. While the increase in degeneration would not have been expected, the plateau is not abnormal because after cells have reached a certain amount of degeneration the amount of degeneration tends to stay constant.
 
 **Discussion:**
 
+I felt that this figure was the perfect project and level of difficulty for this project and overall course. I was able to get all of the data wrangling done, creating the figure was not too difficult once I got some direction. The biggest discrepancy between the figure I produced and the original figure is that the figure that I produced has only one condition graphed. It only has the NGF addback condition graphed while the original figure has the other conditions also graphed. In the future, I would like to use the other data files and figure out a way to graph all the conditions in the same figure.
 
- The things I am still working on changing/fixing for my figure is that I still need to change the title of the figure that I have reproduced so far. I would also like to show on the figure in some way that it is for the one condition, the NGF addback condition. After, I was able to get all of the data wrangling done, creating the figure was not too difficult. The biggest discrepancy between the figure I produced and the original figure is that the figure that I produced has only one condition graphed. It only has the NGF addback condition graphed while the original figure has the other conditions also graphed. For simplicity and clarity I think that I will keep it this way for this assignment however will be creating the original graph for my own personal use and learning.
-
-** Reflection from HW #2:**
-
-
-* I got feedback for some things to add to my introduction, such as explanation as to why we got unexpected results and that I should speak to my PI to get more information about what the hypothesis for our unexpected results were. I had a meeting with my PI were we addressed this issue and I did my best to resolve it and a clear way. 
-* I also received critiques about organizing the data in my methods section. While the data wrangling is done through r, I tried to explain how to read the file names in the csv file as well as what I would get the code in r to complete. 
-* I also received comments on the why behind this experiment, as well as why we are testing the effects of NGF. I tried to address this questions directly and expand on them in my introduction.
-* I also went through and redesigned my github which although it took a long time because I literally redid all of it and put my previous hws as markdowns and pdfs, images etc, I’m very glad I did it because it was a great refresher that I know how to do things but also because I think it is significantly more cohesive now. 
-
+**Conclusion:**
+This project was successful in that the figure was able to be reproduced and a code was written through R studio to not only wrangle the data but also create a comprehensive graph. The project was especially successful because the code that was written for this data set can be slightly altered to be used with other data. Focusing on the realm of the NGF experiment, the results from the data are unexpected since there was continued axon degeneration after NGF addback rather than axon degeneration rescue, indicating that NGF may play multiple roles in the mechanism such as with the TrkA inhibitor. These findings emphasize the significance of careful data analysis and code development to ensure the reproducibility and robustness of scientific research.
